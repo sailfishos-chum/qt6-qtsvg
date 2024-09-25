@@ -1,3 +1,5 @@
+%global  qt_version 6.7.2
+
 Summary: Qt6 - Support for rendering and displaying SVG
 Name:    qt6-qtsvg
 Version: 6.7.2
@@ -5,9 +7,6 @@ Release: 0%{?dist}
 
 License: LGPL-3.0-only OR GPL-3.0-only WITH Qt-GPL-exception-1.0
 Url:     http://www.qt.io
-%global majmin %(echo %{version} | cut -d. -f1-2)
-%global  qt_version %(echo %{version} | cut -d~ -f1)
-
 Source0: %{name}-%{version}.tar.bz2
 
 # filter plugin provides
